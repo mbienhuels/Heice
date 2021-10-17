@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Heice.ViewModels;
 
 namespace Heice
 {
@@ -23,6 +24,10 @@ namespace Heice
         public MainWindow()
         {
             InitializeComponent();
+
+            MainWindowVm = new MainWindowViewModel();
         }
+
+        public MainWindowViewModel MainWindowVm { get; set; }
     }
 }
